@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: httpclient01
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: xuejian3
+Implementation-Vendor-Id: com.hisense
+Build-Jdk: 1.8.0_172
+Implementation-URL: http://projects.spring.io/spring-boot/httpclient01
+ /
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+
