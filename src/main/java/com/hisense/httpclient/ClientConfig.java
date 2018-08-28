@@ -34,14 +34,14 @@ public class ClientConfig {
 		CloseableHttpClient httpclient = HttpClients.createDefault();
 		String url="http://127.0.0.1:80";
 		RequestConfig defaultConfig = RequestConfig.custom().build();
-		RequestConfig getConfig = RequestConfig.copy(defaultConfig)
+		RequestConfig clientConfig = RequestConfig.copy(defaultConfig)
 									.setSocketTimeout(2000)
 									.setConnectionRequestTimeout(1000)
-									.setConnectTimeout(3000)
+									.setConnectTimeout(50)
 									.build();
 		
 		HttpGet getRequest = new HttpGet(url);
-		getRequest.setConfig(getConfig);
+		getRequest.setConfig(clientConfig);
 		InputStream instream=null;
 		try {
 			CloseableHttpResponse response = httpclient.execute(getRequest);
